@@ -48,6 +48,6 @@ def generate_plots(selected_district):
 def download_pdf(district):
     output_file = generate_plots(district)
     if output_file:
-        return send_file(output_file, as_attachment=True)
+        return send_file(output_file, as_attachment=True, download_name=f"{district}_crime_distribution.pdf")
     else:
         return jsonify({"error": "No data available or invalid district"}), 404
