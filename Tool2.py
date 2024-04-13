@@ -89,5 +89,4 @@ def download_pdf(district):
     else:
         return jsonify({"error": "No data available or invalid district"}), 404
 
-if __name__ == '__main__':
-    app.run(debug=True)
+
