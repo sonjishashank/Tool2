@@ -3,4 +3,6 @@ Flask-Cors
 psycopg2-binary
 pandas
 matplotlib
+dask
+dask='[dataframe]'
 gunicorn
