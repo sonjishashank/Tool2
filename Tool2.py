@@ -51,6 +51,3 @@ def download_pdf(district):
         return send_file(output_file, as_attachment=True)
     else:
         return jsonify({"error": "No data available or invalid district"}), 404
-
-if __name__ == '__main__':
-    app.run(debug=True)
